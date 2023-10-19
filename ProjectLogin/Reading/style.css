@@ -1,0 +1,97 @@
+/* Reset some default browser styles for consistency */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a gradient and animation to the body */
+body {
+  background: linear-gradient(to right, #e6e9f0 0%, #eef1f5 100%);
+  font-family: Arial, sans-serif;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style the header section */
+header {
+  background-color: #0072B5;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+#timer {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #008CBA;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #005182;
+  transform: scale(1.05);
+}
+
+/* Style the main content section */
+main {
+  padding: 20px;
+}
+
+/* Style the input box */
+#book-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #0072B5;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f2f2f2;
+}
