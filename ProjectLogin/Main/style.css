@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0072B5;
-    /* background-color: #105165; */
+    background-color: #86BBD8; /* Background color: Carolina Blue (#86BBD8) */
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .container {
@@ -11,8 +11,7 @@ body {
 }
 
 header {
-    /* background-color: rgb(53, 114, 109); */
-    background-color: #0072B5;
+    background-color: #33658A; /* Darker shade of Carolina Blue for header background */
     color: #fff;
     padding: 50px 0;
     display: flex;
@@ -22,52 +21,41 @@ header {
 
 .icon-button {
     padding: 40px; /* Increase padding to make the button larger */
-    /* padding-left: 80px; */
-    /* padding-left: 20px; */
-    background-color: #BAD9EB;
+    background-color: #F6AE2D; /* Button background color: Hunyadi Yellow (#F6AE2D) */
     text-decoration: none;
     border: none;
     border-radius: 25px;
     font-size: 24px; /* Increase font size for the icon */
     margin-right: 80px;
-    /* float: right; /* Position on the right */ 
-    /* margin-left: auto; */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 button.icon-button:hover {
-    /* background-color: #BAD9EB; */
-    background-color: #00B3A6;
+    background-color: #F26419; /* Hover background color: Orange (#F26419) */
+    transform: scale(1.05);
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
     width: 180px;
-    /* margin-right: 30px; */
     margin-left: 80px;
 }
 
 .dropbtn {
-    /* background-color: #00B3A6; */
-    background-color: #BAD9EB;
+    background-color: #F6AE2D; /* Button background color: Hunyadi Yellow (#F6AE2D) */
     border: none;
     border-radius: 30px;
-    /* border-radius: 25%; */
     padding: 30px 30px;
     font-size: 18px;
-    /* margin-right: 100%; */
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #BAD9EB;
-    /* background-color: #00B3A6; */
+    background-color: #F6AE2D; /* Button background color: Hunyadi Yellow (#F6AE2D) */
     min-width: 25px;
-    /* border-radius: 15px; */
     border-radius: 30px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    /* z-index: 1; */
 }
 
 .dropdown-content a {
@@ -79,8 +67,7 @@ button.icon-button:hover {
 }
 
 .dropdown-content a:hover {
-    /* background-color: #BAD9EB; */
-   background-color: #00B3A6;
+    background-color: #F26419; /* Hover background color: Orange (#F26419) */
 }
 
 .dropdown:hover .dropdown-content {
@@ -97,8 +84,7 @@ button.icon-button:hover {
 }
 
 .about-section {
-    /* background-color: #ecbe99; */
-    background-color:#BAD9EB;
+    background-color: #33658A; /* Darker shade of Carolina Blue for about section background */
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 30px;
@@ -107,6 +93,7 @@ button.icon-button:hover {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+    color: white;
 }
 
 .about-section h2 {
@@ -125,22 +112,26 @@ button.icon-button:hover {
 }
 
 .image-section img {
-  max-width: 150px;
-  margin: 10px;
-  float: left;
+    max-width: 150px;
+    margin: 10px;
+    float: left;
+   transition: transform 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.2);
 }
 
 .welcome-section {
-  display: flex;
-  align-items: center; /* Vertically center elements */
+    display: flex;
+    align-items: center; /* Vertically center elements */
 }
 
 h1 {
-  font-size: 24px;
-  margin-right: 10px; /* Add a margin between "Welcome to" and the logo */
+    font-size: 24px;
+    margin-right: 10px; /* Add a margin between "Welcome to" and the logo */
 }
 
 .MainPageLogo img {
-  max-width: 100px;
-  max-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
 }
