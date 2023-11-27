@@ -1,5 +1,5 @@
-# EpsilonPlusFirstGen
-# Educational Website
+# Epsilon Plus
+
 
 ![Website Screenshot](https://github.com/codeBender31/EpsilonPlusFirstGen/blob/main/ProjectLogin/EpsilonLogo.PNG)
 
